@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Hungry Birds Subscription</title>
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			background-color: #f7f7f7;
+			background: url('../bg.jpg') no-repeat center center/cover;
+		}
+		h1 {
+			font-size: 2.5rem;
+			text-align: center;
+			margin-top: 2rem;
+		}
+		h2 {
+			font-size: 1.5rem;
+			margin-top: 3rem;
+			margin-bottom: 1rem;
+		}
+		ul {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+			margin: 0;
+			padding: 0;
+			list-style: none;
+		}
+		li {
+			background-color: #fff;
+			border: 1px solid #ddd;
+			box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+			margin: 1rem;
+			padding: 1rem;
+			max-width: 300px;
+			text-align: center;
+			transition: box-shadow 0.3s ease-in-out;
+		}
+		li:hover {
+			box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+		}
+		h3 {
+			font-size: 1.25rem;
+			margin-top: 0;
+			margin-bottom: 1rem;
+		}
+		p {
+			margin-top: 0;
+			margin-bottom: 1rem;
+		}
+		form {
+			margin-top: 1rem;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+		}
+		button {
+			background-color: #0077ff;
+			color: #fff;
+			font-size: 1rem;
+			font-weight: bold;
+			border: none;
+			border-radius: 4px;
+			padding: 0.5rem 1rem;
+			margin-top: 1rem;
+			cursor: pointer;
+			transition: background-color 0.3s ease-in-out;
+		}
+		button:hover {
+			background-color: #005dff;
+		}
+	</style>
+</head>
+<body>
+	<h1>Hungry Birds Subscription</h1>
+	
+	<h2>Choose your plan:</h2>
+    
+	<ul>
+		<li>
+			<h3>Basic Plan</h3>
+			<p>₹99/month</p>
+			<p>Includes access to all premium features</p>
+			<form action="subscribe.php" method="post">
+				<input type="hidden" name="plan" value="basic">
+				<button type="submit">Subscribe Now</button>
+			</form>
+		</li>
+		<li>
+			<h3>Pro Plan</h3>
+			<p>₹149/month</p>
+			<p>Includes access to all premium features plus priority support</p>
+			<form action="subscribe.php" method="post">
+				<input type="hidden" name="plan" value="pro">
+				<button type="submit">Subscribe Now</button>
+			</form>
+		</li>
+		<li>
+			<h3>Ultimate Plan</h3>
+			<p>₹199/month</p>
+			<p>Includes access to all Ultimate features, priority support</p>
+			<form action="subscribe.php" method="post">
+				<input type="hidden" name="plan" value="Ultimate">
+				<button type="submit">Subscribe Now</button>
